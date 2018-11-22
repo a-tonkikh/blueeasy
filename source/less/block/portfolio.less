@@ -59,17 +59,24 @@
   padding: 0;
   position: relative;
   width: 270px;
+  z-index: 1;
 
   &:hover {
     &::before {
+      align-items: center;
       background-color: rgba(53, 63, 70, 0.8);
+      color: #fff;
       content: "+";
+      display: flex;
       font-size: 72px;
       font-weight: lighter;
+      justify-content: center;
       height: 270px;
       line-height: 24px;
       position: absolute;
-      width: 210px;
+      pointer-events: none;
+      width: 270px;
+      z-index: 2;
     }
   }
 

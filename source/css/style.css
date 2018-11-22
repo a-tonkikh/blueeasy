@@ -471,16 +471,29 @@ body {
   padding: 0;
   position: relative;
   width: 270px;
+  z-index: 1;
 }
 .portfolio__photo-item:hover::before {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(53, 63, 70, 0.8);
+  color: #fff;
   content: "+";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 72px;
   font-weight: lighter;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 270px;
   line-height: 24px;
   position: absolute;
-  width: 210px;
+  pointer-events: none;
+  width: 270px;
+  z-index: 2;
 }
 .portfolio__photo-item:nth-last-child(-n+4) {
   margin-bottom: 4px;
